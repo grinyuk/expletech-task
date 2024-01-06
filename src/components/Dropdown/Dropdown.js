@@ -1,5 +1,7 @@
 import React from 'react';
 
+import css from './Dropdown.module.css';
+
 const Dropdown = ({onValueChange, categories}) => {
     const handleSelectChange = (event) => {
         const selectedValue = event.target.value;
@@ -8,6 +10,8 @@ const Dropdown = ({onValueChange, categories}) => {
 
     return (
         <select
+            id={'categories_list'}
+            className={css.dropdownCategories}
             onChange={handleSelectChange}
         >
             <option defaultValue value={'All'}>All categories</option>

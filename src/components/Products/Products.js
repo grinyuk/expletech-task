@@ -49,9 +49,11 @@ const Products = () => {
 
     const subHeaderComponentMemo = useMemo(() => {
         const handleClear = () => {
-            if (filterText) {
+            if (filterText || filterCategory !== 'All') {
                 setResetPaginationToggle(!resetPaginationToggle);
                 setFilterText('');
+                setFilterCategory('');
+                document.getElementById("categories_list").selectedIndex = 0;
             }
         };
 
