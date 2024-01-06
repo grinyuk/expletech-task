@@ -1,0 +1,51 @@
+.overlay {
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100vw;
+    height: 100vh;
+    z-index: 3;
+    right: 0;
+    left: 0;
+    overflow-y: auto;
+}
+
+.modal {
+    position: absolute;
+    top: 10%;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+    max-width: 400px;
+    background-color: #fff;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    z-index: 5;
+}
+
+.closeBtn {
+    border: none;
+    color: grey;
+    background: #fff;
+    text-align: center;
+    border-radius: 100%;
+    height: 30px;
+    width: 30px;
+}
+
+.thumbnail {
+    display: block;
+    height: 200px;
+    max-width: 100%;
+    margin: 0 auto 10px;
+}
+
+.description {
+    color: gray;
+}
+
+@media only screen and (max-width: 600px) {
+    .modal {
+        width: 350px;
+    }
+}
