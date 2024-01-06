@@ -1,0 +1,6 @@
+@media only screen and (max-width: 600px) {
+    .tableHeader {
+        gap: 1rem !important;
+        justify-content: space-between !important;
+    }
+}

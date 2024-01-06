@@ -1,6 +1,8 @@
 import React from "react";
 import styled from "styled-components";
 
+import css from "./Search.module.css";
+
 const Input = styled.input.attrs(props => ({
     type: "text",
     size: props.small ? 5 : undefined
@@ -35,12 +37,13 @@ const ClearButton = styled.button`
   border: none;
 `;
 
-const FilterComponent = ({filterText, onFilter, onClear}) => {
+const Search = ({filterText, onFilter, onClear}) => {
 
     return (
-        <div className="d-flex justify-content-end w-100">
+        <div className="d-flex w-100">
             <div className="d-flex">
                 <Input
+                    className={css.searchInput}
                     id="search"
                     type="text"
                     placeholder="Search"
@@ -53,4 +56,4 @@ const FilterComponent = ({filterText, onFilter, onClear}) => {
     )
 }
 
-export {FilterComponent};
+export {Search};
