@@ -70,7 +70,7 @@ const Products = () => {
                 />
             </div>
         );
-    }, [filterText, products, resetPaginationToggle]);
+    }, [filterText, filterCategory, products, resetPaginationToggle]);
 
     return (
         <div>
